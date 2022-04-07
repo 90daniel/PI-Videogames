@@ -41,3 +41,5 @@ router.get('/platforms', async (req, res, next) => {
         next(e)
     }
 })
+
+module.exports = router;
