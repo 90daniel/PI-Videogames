@@ -5,8 +5,8 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('videogame', {
     id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
+      type: DataTypes.UUID,   //generate a random number with letters and numbers
+      defaultValue: DataTypes.UUIDV4,   //generate a random UUIDV4
       primaryKey: true,
       allowNull: false,
     },
@@ -18,24 +18,24 @@ module.exports = (sequelize) => {
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    releaseDate: {
+    released: {
       type: DataTypes.DATE,
     },
     rating: {
-      type: DataTypes.SMALLINT,
+      type: DataTypes.DECIMAL,
     },
-    platform: {
-      type: DataTypes.STRING,
-      allowNull: false,
+    platforms: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: false
     },
     image: {
       type: DataTypes.STRING,
     },
-    createdInDb: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: true,
-      allowNull: false,
-    },
+    // createdInDb: {
+    //   type: DataTypes.BOOLEAN,
+    //   defaultValue: true,
+    //   allowNull: false,
+    // },
 
   });
 };
