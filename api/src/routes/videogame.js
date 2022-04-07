@@ -15,3 +15,26 @@ router.get('/:idVideogame', async (req, res, next) => {
         next(e)
     }
 })
+
+router.post('/', async (req, res, next) => {
+    const { name, image, genres, released, rating, platforms, description } = req.body
+    try {
+        let newVideogame = await Videogame.create({   //We create a new videogame with all the attributes that we want
+            name,
+            image,
+            released,
+            rating,
+            platforms,
+            description
+        })
+        const relacion = await Genre.findAll({   //We find all the genres that we want
+            where: {
+                name: genres
+            }
+        })
+        await newVideogame.addGenres(relacion)   //We add the genres to the videogame
+        res.json(newVideogame)
+    } catch (e) {
+        next(e)
+    }
+})
