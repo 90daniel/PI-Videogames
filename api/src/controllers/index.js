@@ -117,3 +117,23 @@ const idDb = async (id) => {
         console.error(e)
     }
 }
+
+//Get videogames ID from API and DB
+const videogame = async (id) => {
+    const id_Db = id.includes("-")
+    if (id_Db) {
+        const vgIdDb = await idDb(id)
+        return vgIdDb
+    } else {
+        const vgIdApi = await idApi(id)
+        return vgIdApi
+    }
+} 
+
+module.exports = {
+    infoApi,
+    infoDB,
+    infoTotal,
+    nameApi,
+    videogame,
+}
