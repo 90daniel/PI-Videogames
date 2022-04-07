@@ -26,3 +26,30 @@ const infoApi = async() => {
         console.log(e)
     }
 };
+
+//Get videogames from DB
+const infoDB = async () => {
+    try {
+        return await Videogame.findAll({    //SELECT * FROM Videogame
+            include: [{
+                model: Genre,
+                atributes: ['name'],
+                throught: {
+                    attributes: []
+                }
+            }]
+        })
+    } catch(e) {
+        console.error(e)
+    }
+}
+
+//Get videogames from API and DB
+const infoTotal = async () => {
+    //to join the two requests, save the execution of the functions
+    const apiData = await infoApi ();
+    const dbData = await infoDB();
+    //now join the two arrays
+    const infoCompleta = dbData.concat(apiData)
+    return infoCompleta
+}
