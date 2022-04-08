@@ -2,9 +2,8 @@ const { Router } = require('express');
 require('dotenv').config();
 const { videogame } = require('../controllers')
 const { Videogame, Genre } = require('../db.js');
-const router = require('./genres');
 
-const Router = Router();
+const router = Router();
 
 router.get('/:idVideogame', async (req, res, next) => {
     const { idVideogame } = req.params //ID received by params
@@ -27,14 +26,16 @@ router.post('/', async (req, res, next) => {
             platforms,
             description
         })
-        const relacion = await Genre.findAll({   //We find all the genres that we want
+        const relation = await Genre.findAll({   //We find all the genres that we want
             where: {
                 name: genres
             }
         })
-        await newVideogame.addGenres(relacion)   //We add the genres to the videogame
+        await newVideogame.addGenres(relation)   //We add the genres to the videogame
         res.json(newVideogame)
     } catch (e) {
         next(e)
     }
 })
+
+module.exports = router;
