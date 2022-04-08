@@ -2,9 +2,9 @@ const { DataTypes } = require('sequelize');
 // Exportamos una funcion que define el modelo
 // Luego le injectamos la conexion a sequelize.
 module.exports = (sequelize) => {
-  // defino el modelo
+  //Define model
   sequelize.define('genre', {
-      //No le paso el ID porque lo genera sequelize automáticamente
+      //ID it's automatically generated
       name: {
         type: DataTypes.STRING,
         allowNull: false,
