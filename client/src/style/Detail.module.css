@@ -11,8 +11,13 @@ body {
 	margin: 50px auto;
 	display: flex;
 	max-width: 770px;
-	background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-    box-shadow: 0 0 4px rgb(255 240 243), 0 0 8px rgb(255 204 213), 0 0 12px rgb(255 179 193), 0 0 16px rgb(255 143 163), 0 0 20px rgb(255 117 143), 0 0 24px rgb(255 77 109);
+	background-image: linear-gradient(to top, #9aadff 0%, #cfdffe 99%, #cfe7fe 100%);
+    box-shadow: 0 0 3px rgb(0 0 255),
+    0 0 6px rgb(0 71 171),
+    0 0 9px rgb(0 0 139),
+    0 0 12px rgb(20 52 163),
+    0 0 15px rgb(25 25 12),
+    0 0 18px rgb(0 0 128);
 }
 
 .card_left {
@@ -54,7 +59,7 @@ body {
 }
 
 .rating .genres .fecha{
-    color: #FFCDB2;
+    color: #ad4335;
 	padding: 10px;
 	font-weight: bold;
 	border-radius: 15px;
@@ -99,10 +104,10 @@ body {
 	background: black;
 	border-radius: 8px;
 	box-shadow:  
-    0 0 3px rgb(255 240 243),
-    0 0 6px rgb(255 204 213),
-    0 0 9px rgb(255 179 193),
-    0 0 12px rgb(255 143 163),
-    0 0 15px rgb(255 117 143),
-    0 0 18px rgb(255 77 109);
+    0 0 3px rgb(0 0 255),
+    0 0 6px rgb(0 71 171),
+    0 0 9px rgb(0 0 139),
+    0 0 12px rgb(20 52 163),
+    0 0 15px rgb(25 25 12),
+    0 0 18px rgb(0 0 128);
 }
