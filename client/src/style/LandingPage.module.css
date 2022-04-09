@@ -8,7 +8,7 @@ html, body {
 .full {
     width: 100%;
     height: 100%;
-    background: url('../imagenes/pink.jpg') no-repeat 50% 50%;
+    background: url('../imagenes/backgroundlanding.jpeg') no-repeat 50% 50%;
     position: fixed;
     background-size: cover;
     display: table;
@@ -27,8 +27,8 @@ html, body {
     text-transform: uppercase;
     display: block;
     font-size: 92px;
-    color: #ffcad4;
-    text-shadow: 0 8px 9px #f4acb7, 0px -2px 1px #ffe5d9;
+    color: #860d0d;
+    text-shadow: 0 8px 9px #ce6776, 0px -2px 1px #e79b77;
     font-weight: bold;
     letter-spacing: -4px;
     text-align: center;
@@ -43,16 +43,16 @@ html, body {
 
 .btn {
   appearance: none;
-  background-color: #FFFFFF;
+  background-color: #860d0d;
   border-radius: 40em;
   border-style: none;
-  box-shadow: #fbc4ab 0 -12px 6px inset;
+  box-shadow: #be3e3e 0 -12px 6px inset;
   box-sizing: border-box;
-  color: #000000;
+  color: #b8b8b8;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: -.24px;
   margin: 0;
@@ -70,8 +70,8 @@ html, body {
 }
 
 .btn:hover {
-  background-color: #ff758f;
-  box-shadow: #a4133c 0 -6px 8px inset;
+  background-color: #0946b8;
+  box-shadow: #131da4 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
@@ -83,7 +83,7 @@ html, body {
   height: 17px;
   width: 15px;
   display: flex;
-  margin-bottom: -200px;
+  margin-bottom: -250px;
 }
 
 .mini_box img{

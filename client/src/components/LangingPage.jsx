@@ -13,7 +13,7 @@ const LandingPage = () => {
                     <h1 className={s.titulo}>Videogames APP</h1>
                     <Link to='/home'>
                         <button className={s.btn}>
-                            <span className={s.ingresar}>GET STARTED</span>
+                            <span className={s.ingresar}>LETS START</span>
                         </button>
                     </Link>
                 </div>
@@ -29,7 +29,7 @@ const LandingPage = () => {
                         </a>
                     </div>
                     <div className={s.mini_box}>
-                        <a href='mailto:@gmail.com' target="_blank" rel="noreferrer">
+                        <a href='mailto:daniel@nexonet.com.ar' target="_blank" rel="noreferrer">
                             <img src={gmail} alt='gmail' />
                         </a>
                     </div>
