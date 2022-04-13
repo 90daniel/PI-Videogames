@@ -36,7 +36,7 @@ export default function SearchBar () {
                         id="name"
                         autoComplete="off"
                         value={state}
-                        placeholder='Buscar videojuego'
+                        placeholder='Search videogames'
                         onChange={e => handleChange(e)}
                     />
                     <button type="submit" className={s.btn}><img src={lupa} alt='lupa'/></button>

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #6D6875;
+    background-color: #204977;
   }
 
   .box {
@@ -12,8 +12,8 @@ body {
   }
 
   .box select {
-    background-color: #FFCDB2;
-    color: black;
+    background-color: #151527;
+    color: rgb(255, 255, 255);
     padding: 7px;
     font-size: 16px;
     appearance: button;

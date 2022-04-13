@@ -29,10 +29,10 @@
     background: black;
     border-radius: 0px;
     box-shadow: 
-    0 0 1px rgb(255 240 243), 
-    0 0 2px rgb(255 204 213), 
-    0 0 3px rgb(255 179 193), 
-    0 0 4px rgb(255 143 163), 
-    0 0 6px rgb(255 117 143), 
-    0 0 17px rgb(255 77 109);
+    0 0 3px rgb(0 0 255),
+    0 0 6px rgb(0 71 171),
+    0 0 9px rgb(0 0 139),
+    0 0 12px rgb(20 52 163),
+    0 0 15px rgb(25 25 12),
+    0 0 18px rgb(0 0 128);
 }

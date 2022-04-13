@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #89898d;
+    background-color: #151527;
     box-shadow: 
     0 0 3px rgb(0 0 255),
     0 0 6px rgb(0 71 171),
@@ -21,7 +21,7 @@
 
 .opcion {
     text-align: center;
-    padding: 57px 0px;
+    padding: 55px 0px;
     text-decoration: none;
     float: left;
 }
@@ -66,13 +66,13 @@
     height: auto;
 }
 
-.imagencita {
+/* .imagencita {
     justify-content: center;
     position: relative;
     margin: 0 40px 0 0;
     height: auto;
     width: auto;
-}
+} */
 
 .busqueda {
     padding: 0;

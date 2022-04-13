@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
-import LandingPage from './components/LangingPage';
+import LandingPage from './components/LandingPage';
 import Detail from './components/Detail';
 import Create from './components/Create';
 import Page404 from './components/Page404';
