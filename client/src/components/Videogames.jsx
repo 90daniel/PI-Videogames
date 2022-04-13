@@ -16,7 +16,6 @@ export const Videogames = ({currentGames}) => {
         dispatch(getAllVideogames()).then(() => setCarga(false)) //me traigo la action creators q me trae todos mis videojuegos de la API
     }, [dispatch])
 
-    //const allVideogames = useSelector(state => state.allVideogames) //me traigo del reducer el estado en donde guarde todos mis videojuegos
 
     if (carga) {
         return <Loading />;
